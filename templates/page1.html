@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(248, 228, 248);
+        }
+        input[type=text],select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .btn{
+            background-color: blueviolet;
+            color: whitesmoke;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 30%;
+            opacity: 0.9;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 35%;
+        }
+        .btn:hover{
+            opacity: 7;
+        }
+        p{
+            color:blueviolet;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 2%;
+        }
+        input[type=submit]:hover{
+            background-color: #17cce4;
+
+        }
+        .center{
+            margin: auto;
+            width: 60%;
+            border: 3px solid #ff9101;
+            padding: 10px;
+        }
+        .header {
+            text-align: center;
+            background-color: blueviolet;
+            color: whitesmoke
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <marquee behavior="alternet" direction="left" width="60%" loop=25 scrollamount=15>
+            <h1><u>DIABETES PREDICTION USING DATA SCIENCE</u></h1>
+        </marquee>
+    </div>
+    <h2><p>Enter the Following Details:</p></h2>
+    <form action="/predict" method="POST">
+   <!-- <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required"/> -->
+    <input type="text" name="Glucose Level" placeholder="Glucose Level" required="required"/>
+  <!--  <input type="text" name="Skin Thickness" placeholder="Skin Thickness" required="required"/> -->
+    <input type="text" name="Insulin" placeholder="Insulin" required="required"/>
+    <input type="text" name="BMI" placeholder="BMI" required="required"/>
+    <input type="text" name="Diabetes PF" placeholder="Diabetes PF" required="required"/>
+    <input type="text" name="Age" placeholder="Age" required="required"/><br>
+        <a href="result.html" title="result" target="_blank"><button type="submit" class="btn">Predict</button></a>
+    </form>
+
+</body>
+</html>
+
